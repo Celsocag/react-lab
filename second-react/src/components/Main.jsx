@@ -1,16 +1,14 @@
 export default function MainConponent() {
   return (
-    <main className="mainContent">
-      <h1>Reason I am excited to learn React</h1>
-      <ol>
-        <li>
-          React is a popular library, so I will be able to fit in with all the
-          coolest devs out there! 😎
-        </li>
-        <li>
-          I am more likely to get a job as a front end developer if I know React
-        </li>
-      </ol>
+    <main>
+      <h1>Fun Facts About React</h1>
+      <ul className="factsList">
+        <li>Was first released in 2013</li>
+        <li>Was originally created by Jordan Walke</li>
+        <li>Has well over 200K stars on GitHub</li>
+        <li>Is maintained by Meta</li>
+        <li>Powers thousands of enterprise apps, including mobile apps</li>
+      </ul>
     </main>
   );
 }

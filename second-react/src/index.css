@@ -1,41 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #27292c;
+  background: #282D35;
   color: white;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+nav{
+  display: flex;
+  background: #21222A;
+  color: #61DAFB;
+  padding: 20px;
+}
+nav span{
+  align-self: center;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
-h1 {
-  margin-top: 30px;
+nav> img {
+  width: 40px;
+  margin-right: 7px;
+}
+main{
+ padding: 20px;
+  background-image: url("./react_bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
-.nav-list{
-  list-style: none;
-  display: flex;
+
+ul.factsList li{
+  padding-block: 10px;
+  line-height: 19px;
 }
-.header{
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
-}
-.logoImg{
-  width: 55px;
-}
-.nav-list-item{
-  margin-left: 10px;
-  font-size: 11px;
-}
-.mainContent{
-  padding: 20px;
-}
-.footer{
-  padding: 20px;
-  background-color: black;
-  position: fixed;
-  bottom: 0;
+ul.factsList li::marker {
+  color: #61DAFB;
+  font-size: 1.5rem;
 }
