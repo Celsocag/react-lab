@@ -1,0 +1,145 @@
+:root {
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  box-sizing: border-box;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+hr{
+  width: calc(100% - 80px);
+  opacity: 0.2;
+}
+
+body{
+  margin: 0;
+  height: 100vdh;
+  min-height: 80vh;
+  font-family: 'inter';
+  font-size: 10px;
+}
+header{
+  background-color: #F55A5A;
+  color: white;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img{
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+
+}
+article{
+  padding: 30px 0;
+}
+.entry_item{
+  padding: 18px 40px;
+  display: flex;
+}
+.entry_item img{
+  height: 168px;
+  border-radius: 8px;
+}
+.content{
+  padding-left: 19px;
+}
+h2{
+  text-transform: uppercase;
+  margin: 0;
+}
+h2:before{
+  content: "";
+  width: 7px;
+  height: 9px;
+  display: inline-block;
+  margin-right: 7px;
+  background-image: url("./assets/img/marker.png");
+  background-size: contain;
+}
+h2+a{
+  color: gray;
+  display: inline;
+  margin-left: 7px;
+}
+h3{
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+
+/* ______________________________________________________________________ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  background-color: whitesmoke;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-card {
+  flex-basis: 225px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+.contact-card > img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.contact-card > h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.info-group {
+  display: flex;
+  align-items: center;
+}
+
+.info-group > img {
+  height: 11px;
+  margin-right: 8px;
+}
+
+.info-group > p {
+  margin-block: 3px;
+  font-size: 12px;
+  color: #2B283A;
+}
