@@ -1,4 +1,4 @@
-// Composable Apps
+// Simple styling
 
 import { createRoot } from "react-dom/client";
 
@@ -6,14 +6,21 @@ const root = createRoot(document.getElementById("root"));
 
 function HeaderComponent() {
   return (
-    <header>
-      <img src="react-logo.png" width="40px" alt="React logo" />
+    <header className="header">
+      <img className="logoImg" src="react-logo.png" alt="React logo" />
+      <nav>
+        <ul className="nav-list">
+          <li className="nav-list-item">Pricing</li>
+          <li className="nav-list-item">About</li>
+          <li className="nav-list-item">Contct</li>
+        </ul>
+      </nav>
     </header>
   );
 }
 function MainConponent() {
   return (
-    <main>
+    <main className="mainContent">
       <h1>Reason I am excited to learn React</h1>
       <ol>
         <li>
@@ -29,8 +36,8 @@ function MainConponent() {
 }
 function FooterComponent() {
   return (
-    <footer>
-      <small>© 2024 Ziroll development. All rights reserved.</small>
+    <footer className="footer">
+      <small>© 2024 Albuquerque development. All rights reserved.</small>
     </footer>
   );
 }
