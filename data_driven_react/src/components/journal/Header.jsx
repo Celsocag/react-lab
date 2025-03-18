@@ -1,4 +1,4 @@
-import globe from '../assets/img/globe.png'
+import globe from '../../assets/img/globe.png'
 
 
 function HeaderComponent() {

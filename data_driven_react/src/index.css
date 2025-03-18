@@ -12,8 +12,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
   box-sizing: border-box;
-}
 
+}
+#root{
+  /* top: 0;
+  position: fixed; */
+}
 .row{
   display: flex;
   flex-direction: row;
@@ -25,7 +29,6 @@ hr{
 
 body{
   margin: 0;
-  height: 100vdh;
   min-height: 80vh;
   font-family: 'inter';
   font-size: 10px;
@@ -52,8 +55,12 @@ article{
   display: flex;
 }
 .entry_item img{
+  width: 125px;
   height: 168px;
-  border-radius: 8px;
+  overflow: hidden;
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin-right: 19px;
 }
 .content{
   padding-left: 19px;
