@@ -1,18 +1,25 @@
-import pads from "./pads";
-import React from "react";
-export default function App(props) {
-  const [padList, setPadList] = React.useState(pads);
-  const styles = {
-    backgroundColor: props.darkMode ? "#222222" : "#cccccc"
-  };
-  const padListItems = padList.map((padItem) => (
-    <button style= {styles} key={padItem.id}></button>
-  ));
-  console.log(padListItems);
+import React from "react"
+import padsData from "./pads"
+import Pad from "./Pad"
 
-  return (
-    <main>
-      <div className="pad-container">{padListItems}</div>
-    </main>
-  );
+export default function App() {
+    const [pads, setPads] = React.useState(padsData)
+
+    function toggle(id){
+        setPads(prevPads => prevPads.map(pad => (
+            pad.id === id ? {...pad, on: !pad.on} : pad
+        )))
+    }
+
+    const buttonElements = pads.map(pad => (
+        <Pad key={pad.id} id={pad.id} toggle={toggle} color={pad.color} on={pad.on} />
+    ))
+
+    return (
+        <main>
+            <div className="pad-container">
+                {buttonElements}
+            </div>
+        </main>
+    )
 }
