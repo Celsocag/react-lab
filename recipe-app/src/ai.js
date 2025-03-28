@@ -39,3 +39,7 @@ export async function getRecipeFromMistral(ingredientsArr) {
         console.error(err.message);
     }
 }
+
+if (!document.querySelector('video').muted) {
+    document.querySelector('video').muted = true;
+} 
